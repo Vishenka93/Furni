@@ -1,0 +1,23 @@
+<svg width="41.818176" height="36.181885" viewBox="0 0 41.8182 36.1819" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_1_220_dd" x="0.000000" y="0.000000" width="41.818176" height="36.181885" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="out" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="BackgroundImageFix" result="effect_dropShadow_1"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="effect_dropShadow_1" result="shape"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_1_220_dd)">
+		<path id="Vector" d="M30.0682 26.7727C28.1226 26.7727 26.5455 25.1956 26.5455 23.25C26.5455 21.3044 28.1226 19.7273 30.0682 19.7273C32.0137 19.7273 33.5909 21.3044 33.5909 23.25C33.5909 25.1956 32.0137 26.7727 30.0682 26.7727Z" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.818182" stroke-linejoin="round"/>
+		<path id="Vector" d="M11.75 26.7727C9.80444 26.7727 8.22726 25.1956 8.22726 23.25C8.22726 21.3044 9.80444 19.7273 11.75 19.7273C13.6955 19.7273 15.2727 21.3044 15.2727 23.25C15.2727 25.1956 13.6955 26.7727 11.75 26.7727Z" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.818182" stroke-linejoin="round"/>
+		<path id="Vector" d="M32.1818 8.45447L36.4091 12.6818L36.4091 19.7272L26.5455 19.7272L26.5455 8.45447L32.1818 8.45447Z" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.818182" stroke-linejoin="round"/>
+		<path id="Vector" d="M26.5455 1.40906L26.5455 19.7273L5.40909 19.7273L5.40909 1.40906L26.5455 1.40906Z" stroke="#000000" stroke-opacity="1.000000" stroke-width="2.818182" stroke-linejoin="round"/>
+	</g>
+</svg>

@@ -1,0 +1,164 @@
+@import url(https://fonts.googleapis.com/css?family=Inter:regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Urbanist:500);
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+html,
+body {
+    height: 100%;
+}
+body {
+    line-height: 1;
+    font-family: "Inter";
+    color: rgb(106, 106, 106);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+._block {
+    overflow: hidden;
+}
+
+[class*="__container"] {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0px 15px;
+    box-sizing: content-box;
+}
+._ibg {
+    position: relative;
+}
+._ibg img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    overflow: hidden;
+}
+.page {
+    flex: 1 1 auto;
+}
+
+/*                media                      */
+$tablet: 991.98px;
+$mobile: 767.98px;
+$mobileSmall: 479.98px;
+
+/*     variables          */
+
+$fsurbanist: "Urbanist";
+$fw500: 500;
+$fw600: 600;
+$fw700: 700;
+$fz32: 32px;
+$fz34: 34px;
+$fz16: 16px;
+$fz13: 13px;
+$fz18: 18px;
+$fz54: 54px;
+$BackgroundDarkest: rgb(239, 242, 241);
+$BackgroundWhite: rgb(255, 255, 255);
+$BackgroundGreen: rgb(59, 93, 80);
+$BackgroundYellow: #f9bf29;
+
+$colorDarkest: rgb(47, 47, 47);
+$colorDark: rgb(0, 0, 0);
+$colorWhite: #fff;
+/*================================*/
+@mixin li() {
+    font-size: 16px;
+    font-family: $fsurbanist;
+    font-weight: $fw500;
+}
+
+@mixin titleAndLogo($fz: $fz34, $fw: $fw600, $color: $colorDark) {
+    font-size: $fz;
+    font-weight: $fw;
+    color: $color;
+}
+
+@mixin button($bg: $BackgroundYellow, $color: $colorDark) {
+    color: $color;
+    background-color: $bg;
+    padding: 11px 35px;
+    border-radius: 30px;
+    transition: all 0.3s ease 0s;
+}
+.button-yellow {
+    @include button();
+
+    &:hover {
+        @include button($colorDark);
+        color: #fff;
+    }
+}
+.button-dark {
+    @include button($colorDark, $colorWhite);
+    &:hover {
+        @include button($BackgroundYellow);
+    }
+}
+
+.logo {
+    @include titleAndLogo($fz32, $fw500, $colorWhite);
+}
+
+.title-big {
+    @include titleAndLogo($fz54, $fw600, $colorWhite);
+}
+.title-black {
+    @include titleAndLogo($fz32, $fw500, $colorDark);
+    @media (max-width: $mobileSmall) {
+        @include titleAndLogo($fz18, $fw500, $colorDark);
+    }
+}
+
+.title {
+    @include titleAndLogo();
+    @media (max-width: $mobileSmall) {
+        @include titleAndLogo($fz18);
+    }
+}
+
+.visual-hidden {
+    display: none;
+}
